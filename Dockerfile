@@ -53,7 +53,9 @@ FROM debian:jessie-slim
 MAINTAINER Ville Törhönen <ville@torhonen.fi>
 
 COPY --from=builder /usr/lib/x86_64-linux-gnu/ /lib/x86_64-linux-gnu/
-COPY --from=builder /usr/local/bin/ /usr/local/bin/
 COPY --from=builder /usr/lib/libpgm-5.1.so.0 /usr/lib/libpgm-5.1.so.0
+COPY --from=builder /usr/local/bin/vertcoind /usr/local/bin/
+COPY --from=builder /usr/local/bin/vertcoin-cli /usr/local/bin/
+COPY --from=builder /usr/local/bin/vertcoin-tx /usr/local/bin/
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
