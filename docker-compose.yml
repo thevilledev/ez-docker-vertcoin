@@ -1,6 +1,6 @@
 version: '2'
 services:
-  vertcoind:
+  vertcoin:
     tty: true
     build: .
     image: docker.io/vtorhonen/ez-docker-vertcoin:latest
