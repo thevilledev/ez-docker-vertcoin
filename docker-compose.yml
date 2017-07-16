@@ -1,0 +1,8 @@
+version: '2'
+services:
+  vertcoind:
+    tty: true
+    build: .
+    image: docker.io/vtorhonen/ez-docker-vertcoin:latest
+    volumes:
+     - ./data:/root/.vertcoin
