@@ -2,7 +2,7 @@
 
 Easy way to set up your own Vertcoin (VTC) node.
 
-Includes Docker configuration for building & running GRS node in Docker. No need to install any extra build tools into your OS.
+Includes Docker configuration for building & running VTC node in Docker. No need to install any extra build tools into your OS.
 
 Compressed Docker image size is about 100 MB.
 
