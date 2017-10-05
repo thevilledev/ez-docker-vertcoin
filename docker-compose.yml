@@ -3,6 +3,6 @@ services:
   vertcoin:
     tty: true
     build: .
-    image: docker.io/vtorhonen/ez-docker-vertcoin:latest
+    image: docker.io/vtorhonen/ez-docker-vertcoin:0.11.1.0
     volumes:
      - ./data:/root/.vertcoin
