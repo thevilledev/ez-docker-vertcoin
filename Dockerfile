@@ -38,6 +38,7 @@ RUN set -x && \
 
 RUN set -x && \
     cd /tmp/vertcoin && \
+    git checkout tags/v0.11.1.0 && \
     ./autogen.sh && \
     ./configure \
         LDFLAGS="-L/tmp/vertcoin/db4/lib/" \
